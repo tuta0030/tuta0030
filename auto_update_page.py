@@ -4,8 +4,12 @@ import time
 from selenium import webdriver
 from selenium.webdriver.common.alert import Alert
 
+# 无窗口模式选项
+options = webdriver.ChromeOptions()
+options.add_argument("headless")
+
 # 模拟浏览器打开到gitee登录界面
-driver = webdriver.Chrome()
+driver = webdriver.Chrome(chrome_options=options)
 driver.get('https://gitee.com/login')
 # 将窗口最大化
 driver.maximize_window()
@@ -24,8 +28,12 @@ time.sleep(2)
 
 # 切换到gitee pages界面--改为you_gitee_id
 driver.get('https://gitee.com/tuta0030/tuta0030/pages')
+
+# 关掉广告
+driver.find_element_by_xpath('/html/body/div[6]/a/img[2]').click()
+
 # 点击更新按钮--通过xpath确定点击位置
-driver.find_element_by_xpath('/html/body/div[3]/div[2]/div/div[2]/div[1]/form/div[7]').click()
+driver.find_element_by_xpath('/html/body/div[3]/div[2]/div/div[2]/div/form/div[7]').click()
 # 确认更新提示框--这个函数的作用是确认提示框
 Alert(driver).accept()
 
@@ -40,7 +48,7 @@ driver.quit()
 
 # 写上更新日志
 # 我这里是写在D盘，可以改为自己喜欢的目录
-fp = open("D:\log.txt", "a+")
+fp = open("log.txt", "a+")
 now_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
 fp.write("auto update time:{0}\n".format(now_time))
 fp.close()
