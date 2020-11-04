@@ -1,0 +1,30 @@
+body {
+    margin: 0em;
+    padding: 0em;
+    background-color: #332d2c;
+}
+
+
+img {
+    width: 100%;
+}
+
+.banner {
+    background-color: #efefef;
+    height: 7em;
+    color: #212121;
+    text-align: center;
+}
+
+.banner_text {
+    color: #efefef;
+    position: absolute;
+    bottom: 18px;
+    right: 75px;
+    font-size: 3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#banner_img {
+    width: 100%;
+}
