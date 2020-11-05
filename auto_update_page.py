@@ -9,7 +9,7 @@ options = webdriver.ChromeOptions()
 options.add_argument("headless")
 
 # 模拟浏览器打开到gitee登录界面
-driver = webdriver.Chrome(chrome_options=options)
+driver = webdriver.Chrome(options=options)
 driver.get('https://gitee.com/login')
 # 将窗口最大化
 driver.maximize_window()
