@@ -30,9 +30,19 @@ body {
   width: 100%;
 }
 
-.referral_img img{
+.referral_img img {
   width: 50px;
   border: 3px solid #ddd;
   border-radius: 50%;
-  filter: grayscale(100%);
+  filter: grayscale(100%) contrast(40%);
+  background-color: #ccc;
+  transition: 0.5s;
+}
+
+.referral_img td {
+  padding: 15px;
+}
+
+.referral_img img:hover {
+  filter: grayscale(0%);
 }
