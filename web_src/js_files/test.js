@@ -3,9 +3,10 @@
 
 console.log("Using js file...")
 
-var top_stuff = document.getElementById("top_stuff");
+var top_stuff = document.getElementById("banner_img");
 var new_content_node = document.createElement("div");
-var new_content_text = document.createTextNode("Banana");
+var new_content_text = document.createTextNode("HOME     GALLARY     CONTACT");
 new_content_node.setAttribute("class", "generated_text");
 new_content_node.appendChild(new_content_text);
-top_stuff.appendChild(new_content_node);
+
+top_stuff.before(new_content_node);
