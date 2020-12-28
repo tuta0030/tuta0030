@@ -10,11 +10,11 @@ function setup_nav_bar() {
   let home = make_nav_bar_item("HOME", "?");
   let gallary = make_nav_bar_item("GALLARY", "?");
   let contact = make_nav_bar_item("CONTACT", "?");
-  let referral = make_nav_bar_item("LINKS", "?#referral_img");
+  let referral = make_nav_bar_item("LINKS", "#referral_img");
 
-  _items = [home, gallary, contact, referral];  // 在这里添加导航栏元素
+  _items = [home, gallary, contact, referral]; // 在这里添加导航栏元素
 
-  for (i=0; i<_items.length; i++) {
+  for (i = 0; i < _items.length; i++) {
     navigating_bar.appendChild(_items[i]);
   }
 
@@ -22,7 +22,6 @@ function setup_nav_bar() {
 }
 
 function setup_referral_links() {
-  footer.innerHTML = " "; //removel html content
   let referral_table = document.createElement("table");
   referral_table.setAttribute("class", "referral_img");
   let bilibili = make_referral_link_item(
@@ -54,7 +53,6 @@ function setup_referral_links() {
   _items = [bilibili, fiverr, artstation, gracg, habitica]; // 在这里添加传送门元素
 
   for (i = 0; i < _items.length; i++) {
-    // append items into the referral_table node
     let td = document.createElement("td");
     td.appendChild(_items[i]);
     referral_table.append(td);
