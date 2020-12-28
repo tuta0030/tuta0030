@@ -1,14 +1,9 @@
-// TODO 丰富自动生成的html内容
-// 导航栏 {主页， 作品展示， 联系}
-// 使用JS 生成传送门html元素
-
 console.log("setup.js loaded.");
 
 var top_stuff = document.getElementById("banner_img");
 var footer = document.getElementById("footer");
 
 function setup_nav_bar() {
-  // TODO 写导航栏的代码
   let navigating_bar = document.createElement("div");
   navigating_bar.id = "nav_bar";
 
