@@ -27,27 +27,27 @@ function setup_referral_links() {
   referral_table.setAttribute("class", "referral_img");
   let bilibili = make_referral_link_item(
     "https://space.bilibili.com/2439294",
-    "https://timg01.bdimg.com/timg?pacompress=&imgtype=0&sec=1439619614&autorotate=1&di=523c545539c4be354eb38d7175bd3673&quality=90&size=b200_200&src=http%3A%2F%2Fpic.rmb.bdstatic.com%2Fa4aaec607be3cc6ff3b97212c057d4de.jpeg",
+    "web_src/images/referral_icons/bilibili.jpg",
     "bilibili"
   );
   let fiverr = make_referral_link_item(
     "https://www.fiverr.com/share/4zP8LG",
-    "//external-content.duckduckgo.com/ip3/www.fiverr.com.ico",
+    "web_src/images/referral_icons/fiverr.png",
     "fiverr"
   );
   let artstation = make_referral_link_item(
     "https://www.artstation.com/tuta0030",
-    "//external-content.duckduckgo.com/ip3/www.artstation.com.ico",
+    "web_src/images/referral_icons/artstation.png",
     "artstation"
   );
   let gracg = make_referral_link_item(
     "https://www.gracg.com/user/p1863791951316943",
-    "//external-content.duckduckgo.com/ip3/www.gracg.com.ico",
+    "web_src/images/referral_icons/gracg.ico",
     "涂鸦王国"
   );
   let habitica = make_referral_link_item(
     "https://habitica.com/groups/guild/fa3929ed-c60a-45fc-82ac-50bce2342035",
-    "//external-content.duckduckgo.com/ip3/habitica.com.ico",
+    "web_src/images/referral_icons/habitica.png",
     "habitica"
   );
 
