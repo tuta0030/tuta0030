@@ -11,7 +11,7 @@ function setup_nav_bar() {
   let gallary = make_nav_bar_item("GALLARY", "?");
   let contact = make_nav_bar_item("CONTACT", "?");
 
-  _items = [home, gallary, contact];
+  _items = [home, gallary, contact];  // 在这里添加导航栏元素
 
   for (i=0; i<_items.length; i++) {
     navigating_bar.appendChild(_items[i]);
