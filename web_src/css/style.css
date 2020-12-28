@@ -16,9 +16,14 @@ body {
   text-decoration: none;
 }
 
-#generated_navigating_bar {
-  color: #ccc;
+#nav_bar {
   text-align: center;
+}
+
+#nav_bar a {
+  color: #ccc;
+  text-decoration: none;
+  padding: 1em 1em;
 }
 
 #main_title {

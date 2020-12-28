@@ -10,9 +10,19 @@ var footer = document.getElementById("footer");
 function setup_nav_bar() {
   // TODO 写导航栏的代码
   let navigating_bar = document.createElement("div");
-  navigating_bar.innerHTML = "Banana";
-  navigating_bar.id = "generated_navigating_bar";
-  return navigating_bar;
+  navigating_bar.id = "nav_bar";
+
+  let home = make_nav_bar_item("HOME", "?");
+  let gallary = make_nav_bar_item("GALLARY", "?");
+  let contact = make_nav_bar_item("CONTACT", "?");
+
+  _items = [home, gallary, contact];
+
+  for (i=0; i<_items.length; i++) {
+    navigating_bar.appendChild(_items[i]);
+  }
+
+  top_stuff.before(navigating_bar);
 }
 
 function setup_referral_links() {
@@ -72,5 +82,12 @@ function make_referral_link_item(referral_link, icon_link, alt_text) {
   return link_item_a;
 }
 
+function make_nav_bar_item(text, href) {
+  let nav_bar_item = document.createElement("a");
+  nav_bar_item.href = href;
+  nav_bar_item.innerHTML = text;
+  return nav_bar_item;
+}
+
 setup_referral_links();
-top_stuff.before(setup_nav_bar());
+setup_nav_bar();
