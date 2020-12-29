@@ -1,4 +1,3 @@
-
 function setup_nav_bar() {
     let navigating_bar = document.createElement("div");
     navigating_bar.id = "nav_bar";
@@ -24,6 +23,3 @@ function setup_nav_bar() {
     nav_bar_item.innerHTML = text;
     return nav_bar_item;
   }
-
-
-setup_nav_bar();

@@ -12,11 +12,8 @@ require.config ({
 })
 
 require(["nav_bar", "referral"],
-function (nav_bar, referral) {
-
-  // setup_referral_links();
-  // setup_nav_bar();
-
-})
-
-
+function(nav_bar, referral){
+  // have no idea how to use require.
+  console.log(nav_bar, referral);
+}
+);
