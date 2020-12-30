@@ -8,7 +8,8 @@ require.config({
   waitSeconds: 200
 });
 
-require(["nav_bar", "referral"], function (nav_bar, referral) {
+require(["nav_bar", "referral", "test"], function (nav_bar, referral, test) {
   nav_bar.setup_nav_bar();
   referral.setup_referral();
+  test.banana();
 });
