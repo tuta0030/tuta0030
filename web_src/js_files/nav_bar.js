@@ -17,9 +17,17 @@ function setup_nav_bar() {
     top_stuff.before(navigating_bar);
   }
   
-  function make_nav_bar_item(text, href) {
+function make_nav_bar_item(text, href) {
     let nav_bar_item = document.createElement("a");
     nav_bar_item.href = href;
     nav_bar_item.innerHTML = text;
     return nav_bar_item;
   }
+
+// 定义导航栏设置模组
+define(function() {
+  return {
+    setup_nav_bar: setup_nav_bar
+  }
+  
+});

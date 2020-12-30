@@ -53,3 +53,10 @@ function make_referral_link_item(referral_link, icon_link, alt_text) {
   link_item_a.appendChild(link_item_img);
   return link_item_a;
 }
+
+
+define (function() {
+  return {
+    setup_referral: setup_referral_links
+  }
+});
