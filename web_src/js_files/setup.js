@@ -5,10 +5,7 @@ console.log("setup.js loaded.");
 
 require.config({
   baseUrl: "web_src/js_files",
-  waitSeconds: 200,
-  paths: {
-    setup: "web_src/js_files/setup.js",
-  },
+  waitSeconds: 200
 });
 
 require(["nav_bar", "referral"], function (nav_bar, referral) {
