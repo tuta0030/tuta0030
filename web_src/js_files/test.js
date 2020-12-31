@@ -12,7 +12,7 @@ function getGalleryImages(parent_node) {
         let div = document.createElement("div");
         let image = document.createElement("img");
         image.src = imgsDir.concat(i.toString()).concat(".jpg");
-        div.className = "column";
+        div.className = "gallery_image";
         div.appendChild(image);
         parent_node.appendChild(div);
     }
