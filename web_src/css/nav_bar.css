@@ -1,0 +1,10 @@
+/* 导航栏 */
+#nav_bar {
+  text-align: center;
+}
+
+#nav_bar a {
+  color: #ccc;
+  text-decoration: none;
+  padding: 1em 1em;
+}
