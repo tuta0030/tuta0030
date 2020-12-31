@@ -18,7 +18,7 @@ function setup_referral_links() {
   );
   let gracg = make_referral_link_item(
     "https://www.gracg.com/user/p1863791951316943",
-    "web_src/images/referral_icons/gracg.ico",
+    "web_src/images/referral_icons/gracg.png",
     "涂鸦王国"
   );
   let habitica = make_referral_link_item(
