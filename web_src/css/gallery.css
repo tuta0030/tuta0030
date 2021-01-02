@@ -1,9 +1,36 @@
-.gallery_div {
-  display: flex;
+/* .gallery_div {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 25px 25px;
 }
 
 .gallery_image {
   width: auto;
   height: 100%;
   object-fit: cover;
+} */
+
+.gallery_div {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery_image {
+  flex: 25vw;
+  max-width: 25%;
+}
+.gallery_image img {
+  width: 100%;
+  object-fit: cover;
+}
+@media screen and (max-width: 600px) {
+  .gallery_image {
+    flex: 25vw;
+    max-width: 25vw;
+  }
+}
+@media screen and (max-width: 800px) {
+  .gallery_image {
+    flex: 100%;
+    max-width: 100%;
+  }
 }

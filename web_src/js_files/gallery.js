@@ -3,15 +3,15 @@ function setupGallery () {
     let gallery = document.createElement("div");
     gallery.className = "gallery_div";
     getGalleryImages(gallery);
-    document.getElementById("top_stuff").appendChild(gallery);
+    document.getElementById("top_stuff").after(gallery);
 }
 
 function getGalleryImages(parent_node) {
-    let imgsDir = "web_src/images/gallery_images/";
+    let img = "web_src/images/gallery_images/";
     for (i=1; i<11; i++) {
-        let div = document.createElement("div");
         let image = document.createElement("img");
-        image.src = imgsDir.concat(i.toString()).concat(".jpg");
+        let div = document.createElement("div");
+        image.src = img.concat(i.toString()).concat(".jpg");
         div.className = "gallery_image";
         div.appendChild(image);
         parent_node.appendChild(div);
