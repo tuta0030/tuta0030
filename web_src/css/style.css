@@ -4,26 +4,24 @@ body {
   background-color: #332d2c;
 }
 
-.banner {
+#top_stuff {
   background-color: #efefef;
-  height: 6em;
   color: #212121;
   text-align: center;
 }
 
-.banner a {
-  color: #212121;
-  text-decoration: none;
-}
-
-#main_title {
-  text-align: center;
-  padding-top: 1em;
+#top_stuff h1{
+  font-size: 4vw;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
 }
 
 #banner_img {
+  background-color: #332d2c;
   width: 100%;
 }
+
+/* hr css below ====================== */
 
 hr {
   height: 1px;

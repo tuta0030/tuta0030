@@ -13,8 +13,8 @@ function setup_nav_bar() {
       navigating_bar.appendChild(_items[i]);
     }
   
-    let top_stuff = document.getElementById("banner_img")
-    top_stuff.before(navigating_bar);
+    let mainTitle = document.getElementById("mainTitle")
+    mainTitle.appendChild(navigating_bar);
   }
   
 function make_nav_bar_item(text, href) {

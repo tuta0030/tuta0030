@@ -1,7 +1,7 @@
 function setupGallery () {
     console.log("Setting up gallery");
     let gallery = document.createElement("div");
-    gallery.className = "row";
+    gallery.className = "gallery_div";
     getGalleryImages(gallery);
     document.getElementById("top_stuff").appendChild(gallery);
 }
@@ -19,5 +19,5 @@ function getGalleryImages(parent_node) {
 }
 
 define(function () {
-  return { banana: setupGallery };
+  return { gallery: setupGallery };
 });
