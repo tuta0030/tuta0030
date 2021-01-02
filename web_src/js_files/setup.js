@@ -25,6 +25,12 @@ function setup_top_stuff() {
 }
 setup_top_stuff();
 
+function setup_footer () {
+  let footer = document.createElement("div");
+  footer.id = "footer";
+  
+}
+
 require(["nav_bar", "referral", "gallery"], function (nav_bar, referral, gallery) {
   nav_bar.setup_nav_bar();
   referral.setup_referral();
