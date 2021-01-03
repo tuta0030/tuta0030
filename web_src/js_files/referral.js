@@ -3,7 +3,7 @@ function setup_referral_links() {
   let referral_table = document.createElement("table");
   let referral_div = document.createElement("div");
   referral_table.className = "referral_img";
-  referral_div.className = "referral_div";
+  referral_div.id = "referral_div";
   let bilibili = make_referral_link_item(
     "https://space.bilibili.com/2439294",
     "web_src/images/referral_icons/bilibili.jpg",
