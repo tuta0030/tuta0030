@@ -19,7 +19,24 @@ function getGalleryImages(parent_node) {
   }
 }
 
+function make_modal() {
+  let myModal = document.createElement("div");
+  let close = document.createElement("span");
+  let image = document.createElement("img");
+  myModal.id = "myModal";
+  myModal.className = "modal";
+  close.className = "close";
+  close.innerHTML = "&times;";
+  image.className = "modal-content";
+  image.id = "img01";
+  myModal.appendChild(close);
+  myModal.appendChild(image);
+  document.body.appendChild(myModal);
+}
+
 function modal(image) {
+  make_modal();
+
   let modal = document.getElementById("myModal");
   let span = document.getElementsByClassName("close")[0];
   let modalImg = document.getElementById("img01");
