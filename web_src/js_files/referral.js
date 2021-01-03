@@ -1,6 +1,9 @@
 function setup_referral_links() {
+  console.log("referral.js loaded")
   let referral_table = document.createElement("table");
-  referral_table.setAttribute("class", "referral_img");
+  let referral_div = document.createElement("div");
+  referral_table.className = "referral_img";
+  referral_div.className = "referral_div";
   let bilibili = make_referral_link_item(
     "https://space.bilibili.com/2439294",
     "web_src/images/referral_icons/bilibili.jpg",
@@ -35,7 +38,8 @@ function setup_referral_links() {
     referral_table.append(td);
   }
   let footer = document.getElementById("footer");
-  footer.appendChild(referral_table);
+  referral_div.appendChild(referral_table);
+  footer.appendChild(referral_div);
 }
 
 function make_referral_link_item(referral_link, icon_link, alt_text) {

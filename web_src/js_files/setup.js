@@ -5,34 +5,17 @@ console.log("setup.js loaded.");
 
 require.config({
   baseUrl: "web_src/js_files",
-  waitSeconds: 200
+  waitSeconds: 2000
 });
-
-function setup_top_stuff() {
-  let footer = document.getElementById("footer")
-  let topStuff = document.createElement("div");
-  let mainTitle = document.createElement("h1");
-  let banner_img = document.createElement("img");
-  banner_img.id = "banner_img";
-  topStuff.id = "top_stuff";
-  mainTitle.id = "mainTitle";
-  banner_img.src = "web_src/images/banner.png";
-  banner_img.draggable = false;
-  mainTitle.innerHTML = "TUTA";
-  topStuff.appendChild(mainTitle);
-  topStuff.appendChild(banner_img);
-  document.body.insertBefore(topStuff, footer);
-}
-setup_top_stuff();
 
 function setup_footer () {
   let footer = document.createElement("div");
   footer.id = "footer";
-  
 }
 
-require(["nav_bar", "referral", "gallery"], function (nav_bar, referral, gallery) {
+require(["top_stuff", "nav_bar", "referral", "gallery"], function (setup_top_stuff, nav_bar, referral, gallery) {
+  setup_top_stuff.setup_top_stuff();
   nav_bar.setup_nav_bar();
-  referral.setup_referral();
   gallery.gallery();
+  referral.setup_referral();
 });

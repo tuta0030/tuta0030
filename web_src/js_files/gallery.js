@@ -1,5 +1,5 @@
 function setupGallery () {
-    console.log("Setting up gallery");
+    console.log("gallery.js loaded");
     let gallery = document.createElement("div");
     gallery.className = "gallery_div";
     getGalleryImages(gallery);
