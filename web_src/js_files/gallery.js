@@ -1,7 +1,7 @@
 function setupGallery() {
   console.log("gallery.js loaded");
   let gallery = document.createElement("div");
-  gallery.className = "gallery_div";
+  gallery.id = "gallery_div";
   getGalleryImages(gallery);
   document.getElementById("top_stuff").after(gallery);
 }

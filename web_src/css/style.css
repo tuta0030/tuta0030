@@ -2,23 +2,12 @@
 @import url(gallery.css);
 @import url(referral.css);
 @import url(nav_bar.css);
+@import url(top_stuff.css);
 
 body {
   margin: 0em;
   padding: 0em;
   background-color: #332d2c;
-}
-
-#top_stuff {
-  background-color: #efefef;
-  color: #212121;
-  text-align: center;
-}
-
-#top_stuff h1{
-  font-size: 8vw;
-  padding-top: 2vh;
-  padding-bottom: 1vh;
 }
 
 #banner_img {

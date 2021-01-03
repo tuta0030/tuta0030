@@ -1,0 +1,10 @@
+#top_stuff {
+  background-color: #efefef;
+  color: #212121;
+  text-align: center;
+}
+
+#top_stuff h1 {
+  font-size: 5vw;
+  padding-top: 2vh;
+}

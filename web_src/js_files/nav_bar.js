@@ -3,7 +3,7 @@ function setup_nav_bar() {
   navigating_bar.id = "nav_bar";
 
   let home = make_nav_bar_item("HOME", "?");
-  let gallary = make_nav_bar_item("GALLARY", "?");
+  let gallary = make_nav_bar_item("GALLARY", "#gallery_div");
   let contact = make_nav_bar_item("CONTACT", "?");
   let referral = make_nav_bar_item("LINKS", "#referral_img");
 

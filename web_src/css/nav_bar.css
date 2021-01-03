@@ -1,11 +1,12 @@
 /* 导航栏 */
 #nav_bar {
-  padding-top: 2vh;
+  padding-top: 3vh;
   text-align: center;
   font-size: 2vw;
 }
 
 #nav_bar a {
+  font-size: 1.2vw;
   color: rgb(41, 41, 41);
   text-decoration: none;
   padding: 3vw;
