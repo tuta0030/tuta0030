@@ -4,7 +4,7 @@ function setup_nav_bar() {
 
   let home = make_nav_bar_item("HOME", "?");
   let gallary = make_nav_bar_item("GALLARY", "#gallery_div");
-  let contact = make_nav_bar_item("CONTACT", "?");
+  let contact = make_nav_bar_item("CONTACT", "web_src/html/contact.html");
   let referral = make_nav_bar_item("LINKS", "#referral_div");
 
   _items = [home, gallary, contact, referral]; // 在这里添加导航栏元素
