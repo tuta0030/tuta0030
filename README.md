@@ -1,2 +1,1 @@
-
-Tuta's Github pages.
+Tuta's pages.

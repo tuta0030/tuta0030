@@ -8,14 +8,10 @@ require.config({
   waitSeconds: 2000
 });
 
-function setup_footer () {
-  let footer = document.createElement("div");
-  footer.id = "footer";
-}
-
-require(["top_stuff", "nav_bar", "referral", "gallery"], function (setup_top_stuff, nav_bar, referral, gallery) {
+require(["top_stuff", "nav_bar", "referral", "gallery", "footer"], function (setup_top_stuff, nav_bar, referral, gallery, footer) {
   setup_top_stuff.setup_top_stuff();
   nav_bar.setup_nav_bar();
   gallery.gallery();
+  footer.setup_footer();
   referral.setup_referral();
 });
