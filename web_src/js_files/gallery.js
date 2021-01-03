@@ -34,6 +34,12 @@ function modal(image) {
   // Get the <span> element that closes the modal
   var span = document.getElementsByClassName("close")[0];
 
+  window.onkeydown = function (event) {
+      if (event.keyCode === 27) {
+          modal.style.display = "none";
+      }
+  }
+
   span.onclick = function () {
     modal.style.display = "none";
   };
