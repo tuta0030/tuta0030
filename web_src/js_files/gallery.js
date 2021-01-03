@@ -20,25 +20,20 @@ function getGalleryImages(parent_node) {
 }
 
 function modal(image) {
-  // Get the modal
-  var modal = document.getElementById("myModal");
+  let modal = document.getElementById("myModal");
+  let span = document.getElementsByClassName("close")[0];
+  let modalImg = document.getElementById("img01");
 
-  // Get the image and insert it inside the modal - use its "alt" text as a caption
-  let img = image;
-  var modalImg = document.getElementById("img01");
-  img.onclick = function () {
+  image.onclick = function () {
     modal.style = "display:block; width:100%;";
     modalImg.src = image.src;
   };
 
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
-
   window.onkeydown = function (event) {
-      if (event.keyCode === 27) {
-          modal.style.display = "none";
-      }
-  }
+    if (event.keyCode === 27) {
+      modal.style.display = "none";
+    }
+  };
 
   span.onclick = function () {
     modal.style.display = "none";
