@@ -1,2 +1,2 @@
 
-Tuta's Gitee pages.
+Tuta's Github pages.
