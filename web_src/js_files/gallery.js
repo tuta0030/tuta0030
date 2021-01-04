@@ -7,11 +7,11 @@ function setupGallery(gallery_images_path) {
 }
 
 function getGalleryImages(gallery_images_path, parent_node) {
-  let div = document.createElement("div");
   let files = gallery_images_path.paths;
   console.log("current gallery image files: ");
   for (i = 0; i < files.length; i++) {
     console.log(files[i]);
+    let div = document.createElement("div");
     let image = document.createElement("img");
     image.src = files[i];
     modal(image);
