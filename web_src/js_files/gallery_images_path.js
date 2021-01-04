@@ -1,0 +1,1 @@
+define(galleryImageFilesPaths = {paths: ["web_src/images/gallery_images/1.jpg","web_src/images/gallery_images/10.jpg","web_src/images/gallery_images/2.jpg","web_src/images/gallery_images/5.jpg","web_src/images/gallery_images/6.jpg","web_src/images/gallery_images/7.jpg","web_src/images/gallery_images/8.jpg","web_src/images/gallery_images/9.jpg"]});

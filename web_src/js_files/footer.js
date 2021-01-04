@@ -1,4 +1,5 @@
 function setup_footer () {
+    console.log("footer.js loaded")
     let footer = document.createElement("div");
     let textDiv = document.createElement("div");
     let hr = document.createElement("hr");

@@ -1,23 +1,48 @@
-function setupGallery() {
+function setupGallery(gallery_images_path) {
   console.log("gallery.js loaded");
   let gallery = document.createElement("div");
   gallery.id = "gallery_div";
-  getGalleryImages(gallery);
+  getGalleryImages(gallery_images_path, gallery);
   document.getElementById("top_stuff").after(gallery);
 }
 
-function getGalleryImages(parent_node) {
-  let img = "web_src/images/gallery_images/";
-  for (i = 1; i < 11; i++) {
+function getGalleryImages(gallery_images_path, parent_node) {
+  let div = document.createElement("div");
+  let files = gallery_images_path.paths;
+  console.log("current gallery image files: ");
+  for (i = 0; i < files.length; i++) {
+    console.log(files[i]);
     let image = document.createElement("img");
-    let div = document.createElement("div");
-    image.src = img.concat(i.toString()).concat(".jpg");
+    image.src = files[i];
     modal(image);
     div.className = "gallery_image";
     div.appendChild(image);
     parent_node.appendChild(div);
   }
 }
+
+// function getGalleryImages(parent_node, files) {
+//   let div = document.createElement("div");
+//   for (i = 0; i<files.length; i++) {
+//     let image = document.createElement("img");
+//     image.src = files[i];
+//     modal(image);
+//     div.className = "gallery_image";
+//     div.appendChild(image);
+//     parent_node.appendChild(div);
+//   }
+
+//   // for (i = 1; i < 11; i++) {
+//   //   let image = document.createElement("img");
+//   //   let div = document.createElement("div");
+//   //   image.src = img.concat(i.toString()).concat(".jpg");
+//   //   modal(image);
+//   //   div.className = "gallery_image";
+//   //   div.appendChild(image);
+//   //   parent_node.appendChild(div);
+//   // }
+
+// }
 
 function make_modal() {
   let myModal = document.createElement("div");
