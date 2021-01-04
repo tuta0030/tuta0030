@@ -21,29 +21,6 @@ function getGalleryImages(gallery_images_path, parent_node) {
   }
 }
 
-// function getGalleryImages(parent_node, files) {
-//   let div = document.createElement("div");
-//   for (i = 0; i<files.length; i++) {
-//     let image = document.createElement("img");
-//     image.src = files[i];
-//     modal(image);
-//     div.className = "gallery_image";
-//     div.appendChild(image);
-//     parent_node.appendChild(div);
-//   }
-
-//   // for (i = 1; i < 11; i++) {
-//   //   let image = document.createElement("img");
-//   //   let div = document.createElement("div");
-//   //   image.src = img.concat(i.toString()).concat(".jpg");
-//   //   modal(image);
-//   //   div.className = "gallery_image";
-//   //   div.appendChild(image);
-//   //   parent_node.appendChild(div);
-//   // }
-
-// }
-
 function make_modal() {
   let myModal = document.createElement("div");
   let close = document.createElement("span");
