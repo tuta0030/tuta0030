@@ -1,5 +1,4 @@
 {
-    "python.pythonPath": "venv\\Scripts\\python.exe",
     "requireModuleSupport.configFile": "web_src\\js_files\\require.js",
     "requireModuleSupport.modulePath": "web_src\\js_files",
     "todo-tree.filtering.excludeGlobs": ["require.js"]
