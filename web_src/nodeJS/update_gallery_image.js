@@ -1,15 +1,18 @@
 var fs = require("fs");
+
 var showGalleryImageFiles = {
+  images_path : "web_src/images/gallery_images/",
+  gallery_images_path : "web_src/js_files/gallery_images_path.js",
   show: function () {
-    var files = fs.readdirSync("web_src/images/gallery_images/");
+    var files = fs.readdirSync(this.images_path);
     console.log(files);
   },
   get: function () {
     var fs = require("fs");
-    var files = fs.readdirSync("web_src/images/gallery_images/");
+    var files = fs.readdirSync(this.images_path);
     let files_path = [];
     for (i = 0; i < files.length; i++) {
-      files_path.push("web_src/images/gallery_images/".concat(files[i]));
+      files_path.push(this.images_path.concat(files[i]));
     }
     return files_path;
   },
@@ -23,7 +26,7 @@ var showGalleryImageFiles = {
       .concat(strListItem)
       .concat("]});");
     fs.writeFile(
-      "web_src/js_files/gallery_images_path.js",
+      this.gallery_images_path,
       out_content,
       encodeURI("utf-8"),
       function (err) {

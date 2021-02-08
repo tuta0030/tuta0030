@@ -29,8 +29,13 @@ function setup_referral_links() {
     "web_src/images/referral_icons/habitica.png",
     "habitica"
   );
+  let datuta = make_referral_link_item(
+    "daxigua-master/index.html",
+    "web_src/images/web_icon.png",
+    "datuta"
+  )
 
-  _items = [bilibili, fiverr, artstation, gracg, habitica]; // 在这里添加传送门元素
+  _items = [bilibili, fiverr, artstation, gracg, habitica, datuta]; // 在这里添加传送门元素
 
   for (i = 0; i < _items.length; i++) {
     let td = document.createElement("td");
