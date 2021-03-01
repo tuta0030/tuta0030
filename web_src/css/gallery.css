@@ -15,7 +15,7 @@
 }
 
 .gallery_image img:hover {
-  filter: contrast(100%);
+  filter: contrast(80%);
 }
 
 @media screen and (max-width: 600px) {
