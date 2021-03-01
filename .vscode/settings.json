@@ -1,5 +1,4 @@
 {
-    "requireModuleSupport.configFile": "web_src\\js_files\\require.js",
-    "requireModuleSupport.modulePath": "web_src\\js_files",
+    "javascript.format.enable": true,
     "todo-tree.filtering.excludeGlobs": ["require.js"]
 }

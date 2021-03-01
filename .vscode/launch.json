@@ -12,7 +12,7 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}\\web_src\\nodeJS\\update_gallery_image.js",
-            "runtimeExecutable": "C:\\Users\\Administrator\\AppData\\Roaming\\nvm\\v13.6.0\\node.exe"
+            "runtimeExecutable": "E:\\nvm\\v15.8.0\\node.exe"
         }
     ]
 }

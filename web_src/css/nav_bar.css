@@ -11,3 +11,7 @@
   text-decoration: none;
   padding: 3vw;
 }
+
+#nav_bar a:hover {
+  text-decoration: underline;
+}

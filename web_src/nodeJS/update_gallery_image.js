@@ -1,8 +1,8 @@
 var fs = require("fs");
 
 var showGalleryImageFiles = {
-  images_path : "web_src/images/gallery_images/",
-  gallery_images_path : "web_src/js_files/gallery_images_path.js",
+  images_path: "web_src/images/gallery_images/",
+  gallery_images_path: "web_src/js_files/gallery_images_path.js",
   show: function () {
     var files = fs.readdirSync(this.images_path);
     console.log(files);
@@ -20,7 +20,7 @@ var showGalleryImageFiles = {
     let strListItem = [];
     let strListBefore = this.get();
     for (i = 0; i < strListBefore.length; i++) {
-      strListItem.push('"'.concat(strListBefore[i]).concat('"'));
+      strListItem.push('\n"'.concat(strListBefore[i]).concat('"'));
     }
     let out_content = "define(galleryImageFilesPaths = {paths: ["
       .concat(strListItem)
