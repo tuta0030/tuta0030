@@ -9,7 +9,7 @@
 .gallery_image img {
   width: 100%;
   height: 300px;
-  filter: contrast(80%);
+  filter: saturate(0%) contrast(60%);
   object-fit: cover;
   transition: 0.3s;
 }
